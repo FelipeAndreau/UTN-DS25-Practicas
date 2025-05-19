@@ -1,0 +1,39 @@
+table {
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+td {
+  border: 1px solid #000;
+  padding: 20px;
+  text-align: center;
+  background-color: #d0e1f9; /* Color base */
+}
+
+/* Segunda fila completa */
+.fila2 td {
+  background-color: #2c5f2d;
+  color: white;
+}
+
+/* Tercer columna */
+td:nth-child(3) {
+  background-color: #5d001e;
+  color: white;
+}
+
+/* Intersección segunda fila y tercera columna */
+.interseccion1 {
+  background-color: #623412 !important;
+}
+
+/* Intersección tercera fila y segunda columna */
+.interseccion2 {
+  background-color: #aaaaaa !important;
+}
+
+/* Primera y última celda (esquinas) */
+.especial {
+  background-color: #c85c00;
+  color: white;
+}
