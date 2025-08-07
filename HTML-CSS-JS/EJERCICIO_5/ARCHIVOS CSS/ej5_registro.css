@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-image: url(../IMÁGENES/fondo_suave.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 650px;
+    background-color: rgba(255, 255, 255, 0.85);
+    background-blend-mode: lighten;
+    color: #222;
+}
+
+div.form {
+    font-size: 40px;
+    text-align: center;
+}
+
+div.form div {
+    margin-top: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+div label input, select {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    border: 2px solid black;
+    border-left: 7px solid grey;
+    border-radius: 5px;
+}
+
+div.enviar label input {
+    margin-top: 15px;
+    font-size: 35px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 5px;
+    border: 3px solid black;
+}
+
+span {
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}

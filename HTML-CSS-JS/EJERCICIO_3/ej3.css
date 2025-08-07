@@ -1,0 +1,36 @@
+table {
+    border-collapse: collapse;
+    width: auto;
+    margin: 20px;
+    border: 1px solid black;
+}
+
+td {
+    border: 1px solid black;
+    width: 320px;
+    height: 135px;
+}
+
+table tr.verde {
+    background-color: rgb(172, 232, 172);
+}
+
+table tr.verde td.amarillito {
+    background-color: rgb(234, 234, 156);
+}
+
+table tr.grisecito {
+    background-color: rgb(163, 212, 217);
+} 
+
+table tr.grisecito td.naranja {
+    background-color: orange;
+}
+
+table tr.grisecito td.rosita {
+    background-color: rgb(232, 201, 226);
+}
+
+table tr.grisecito td.negro {
+    background-color: rgb(61, 53, 53);
+}

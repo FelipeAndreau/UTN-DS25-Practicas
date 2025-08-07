@@ -1,0 +1,36 @@
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 19px;
+}
+
+b {
+    color: black;
+    font-family: monospace;
+    font-size: 14.7px;
+}
+
+span {
+    color: rgb(29, 135, 135);
+}
+
+ul li {
+    font-family: monospace;
+}
+
+a {
+    border: 2.2px solid black;
+    text-decoration: none;
+    color: slategrey;
+    padding: 5px;
+    margin: 0;
+}
+
+body {
+    text-align: center;
+    background-color: bisque;
+}
+
+ul li {
+    list-style-position: inside;
+}

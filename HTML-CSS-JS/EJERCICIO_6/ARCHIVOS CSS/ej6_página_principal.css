@@ -1,0 +1,92 @@
+header {
+    text-align: center;
+    background-image: url(../IMÁGENES/R.jpg);
+    background-size: cover;
+    background-position: center;
+    color: rgb(251, 249, 249);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+nav {
+    float: left;
+    width: 700px;
+}
+
+main { 
+    float: left; 
+    width: 550px; 
+} 
+
+footer { 
+    clear: both; 
+}
+
+header img {
+    margin-top: 5px;
+    height: 70px;
+    margin-left: 10px;
+}
+
+header span {
+    font-size: 80px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+nav {
+    margin-top: 60px;
+}
+
+a {
+    margin: 10px;
+    border: 5px solid black;
+    text-decoration: none;
+    padding: 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: brown;
+    font-size: 27px;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-image: url(../IMÁGENES/fondo_suave.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+    background-color: rgba(232, 214, 214, 0.85);
+    background-blend-mode: lighten;
+    color: #222;
+}
+
+main {
+    margin-top: 60px;
+}
+
+main p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+main img {
+    margin: 0;
+    height: 180px;
+}
+
+footer p {
+    text-align: center;
+    font-weight: 500;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-image: url(../IMÁGENES/pie.avif);
+}
+
+footer span#tw {
+    color: rgb(23, 136, 217);
+}
+
+footer span#ig {
+    color: rgb(222, 36, 29);
+}

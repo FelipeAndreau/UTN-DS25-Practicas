@@ -1,0 +1,32 @@
+h1 {
+    font-size: 40px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+p {
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+img {
+    margin-top: 10px;
+    max-height: 150px;
+}
+
+div.libros {
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-image: url(../IMÁGENES/fondo_suave.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 1525px;
+    background-color: rgba(255, 255, 255, 0.85);
+    background-blend-mode: lighten;
+    color: #222;
+}

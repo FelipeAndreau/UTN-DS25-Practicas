@@ -1,0 +1,44 @@
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 19px;
+}
+
+b {
+    font-family: cursive;
+    font-size: 12.2px;
+}
+
+a {
+    border: 2.2px solid black;
+    text-decoration: none;
+    color: slategrey;
+    padding: 5px;
+    margin: 0;
+}
+
+ul #programacion {
+    font-family: monospace;
+}
+
+ul .idiomas {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12.8px;
+}
+
+span.deporte {
+    color: rgb(233, 162, 29);
+}
+
+span {
+    color: rgb(160, 18, 160);
+}
+
+body {
+    text-align: center;
+    background-color: bisque;
+}
+
+ul li {
+    list-style-position: inside;
+}

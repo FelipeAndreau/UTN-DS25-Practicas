@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Digital - Ulises Mateo Bucchino</title>
+    <link rel="stylesheet" href="ej1_index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cv-container">
+        <header class="hero-section">
+            <div class="profile-image">
+                <div class="avatar">UB</div>
+            </div>
+            <h1 class="main-title">Ulises Mateo Bucchino</h1>
+            <h2 class="subtitle">Estudiante Avanzado de Ingeniería en Sistemas de Información</h2>
+            <p class="hero-description">
+                Desarrollador en formación apasionado por la tecnología y la innovación. 
+                Especializado en soluciones creativas y trabajo colaborativo.
+            </p>
+        </header>
+
+        <nav class="navigation">
+            <div class="nav-grid">
+                <a href="ej1_estudios.html" class="nav-card">
+                    <div class="nav-icon">🎓</div>
+                    <h3>Formación Académica</h3>
+                    <p>Educación y certificaciones</p>
+                </a>
+                
+                <a href="ej1_experiencia_laboral.html" class="nav-card">
+                    <div class="nav-icon">💼</div>
+                    <h3>Experiencia Laboral</h3>
+                    <p>Proyectos y trabajos realizados</p>
+                </a>
+                
+                <a href="ej1_hobbies.html" class="nav-card">
+                    <div class="nav-icon">🎯</div>
+                    <h3>Habilidades & Hobbies</h3>
+                    <p>Intereses y competencias</p>
+                </a>
+            </div>
+        </nav>
+
+        <section class="contact-section">
+            <h3>📱 Información de Contacto</h3>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <span class="contact-icon">📞</span>
+                    <div class="contact-info">
+                        <strong>Teléfono</strong>
+                        <p>+54-9-221-538-2762</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <span class="contact-icon">✉️</span>
+                    <div class="contact-info">
+                        <strong>Email</strong>
+                        <p>ulibucchino@gmail.com</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <span class="contact-icon">📍</span>
+                    <div class="contact-info">
+                        <strong>Ubicación</strong>
+                        <p>Buenos Aires, La Plata<br>133 NRO 1515</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills-preview">
+            <h3>💻 Tecnologías Principales</h3>
+            <div class="skills-tags">
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">TypeScript</span>
+                <span class="skill-tag">HTML/CSS</span>
+                <span class="skill-tag">Git</span>
+            </div>
+        </section>
+
+        <footer class="cv-footer">
+            <div class="social-links">
+                <button class="social-btn" onclick="window.print()">
+                    📄 Imprimir CV
+                </button>
+                <button class="social-btn" onclick="navigator.share && navigator.share({title: 'CV - Ulises Bucchino', url: window.location.href})">
+                    🔗 Compartir
+                </button>
+            </div>
+            <p class="footer-text">© 2025 Ulises Mateo Bucchino - CV Digital Interactivo</p>
+        </footer>
+    </div>
+
+    <script>
+        // Funcionalidad moderna con JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animación de entrada
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            });
+
+            document.querySelectorAll('.nav-card, .contact-item').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(20px)';
+                el.style.transition = 'all 0.6s ease';
+                observer.observe(el);
+            });
+
+            // Efecto hover mejorado
+            document.querySelectorAll('.nav-card').forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'scale(1.05) translateY(-5px)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'scale(1) translateY(0)';
+                });
+            });
+
+            // Modo oscuro
+            const toggleTheme = () => {
+                document.body.classList.toggle('dark-theme');
+                localStorage.setItem('theme', document.body.classList.contains('dark-theme') ? 'dark' : 'light');
+            };
+
+            // Botón de tema (se puede agregar al header)
+            if (localStorage.getItem('theme') === 'dark') {
+                document.body.classList.add('dark-theme');
+            }
+        });
+    </script>
+</body>
+</html>

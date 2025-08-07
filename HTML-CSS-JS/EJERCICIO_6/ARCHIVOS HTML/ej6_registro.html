@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO 6</title>
+    <link rel="stylesheet" href="../ARCHIVOS CSS/ej6_registro.css">
+</head>
+<body>
+    <main class="form">
+        <form action="#" method="post">
+            <div class="name">
+                <label for="nombre">Nombre <br>
+                    <input type="text" id="nombre" name="nombre" placeholder="Fabri" required>
+                </label>
+            </div>
+
+            <div class="surname">
+                <label for="apellido">Apellido <br>
+                    <input type="text" id="apellido" name="apellido" placeholder="Pérez" required>
+                </label>
+            </div>
+
+            <div class="password">
+                <label for="pass">Contraseña <br>
+                    <input type="password" id="pass" name="pass" placeholder="********" required>
+                </label>
+            </div>
+
+            <div class="email">
+                <label for="email">Email <br>
+                    <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                </label>
+            </div>
+
+            <div class="nacimiento">
+                <label for="fecha">Fecha de nacimiento <br>
+                    <input type="date" id="fecha" name="fecha" required>
+                </label>
+            </div>
+
+            <div class="telefono">
+                <label for="telefono">Teléfono <br>
+                    <input type="tel" id="telefono" name="telefono" placeholder="1122334455" pattern="[0-9]{10}">
+                </label>
+            </div>
+
+            <div class="web">
+                <label for="web">Sitio web favorito <br>
+                    <input type="url" id="web" name="web" placeholder="https://">
+                </label>
+            </div>
+
+            <div class="sex">
+                <label>Sexo <br>
+                    <span>
+                        <input type="radio" id="masculino" name="sexo" value="masculino"> <label for="masculino">Masculino</label>
+                        <input type="radio" id="femenino" name="sexo" value="femenino"> <label for="femenino">Femenino</label>
+                    </span>
+                </label>
+            </div>
+
+            <div class="tema_fav">
+                <label for="tema">Tema Favorito <br>
+                    <select id="tema" name="tema">
+                        <option value="novela">Novela</option>
+                        <option value="terror">Terror</option>
+                        <option value="scifi">Ciencia Ficción</option>
+                        <option value="policial">Policial</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="enviar">
+                <label>
+                    <input type="submit" value="ENVIAR">
+                </label>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
