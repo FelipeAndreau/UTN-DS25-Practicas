@@ -1,0 +1,24 @@
+{
+  "name": "library-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "build": "echo 'Build completed'",
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push",
+    "db:migrate": "prisma migrate dev"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.7.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "prisma": "^5.7.1"
+  }
+}

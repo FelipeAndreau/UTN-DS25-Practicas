@@ -1,0 +1,16 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Book {
+  id     Int     @id @default(autoincrement())
+  title  String
+  author String
+  price  Float
+  image  String? @default("https://via.placeholder.com/300x400/4F46E5/FFFFFF?text=Book+Cover")
+}
