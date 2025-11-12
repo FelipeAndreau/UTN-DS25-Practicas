@@ -1,0 +1,92 @@
+#cabecera {
+    text-align: center;
+    background-image: url(../IMÁGENES/R.jpg);
+    background-size: cover;
+    background-position: center;
+    color: rgb(251, 249, 249);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+#menu {
+    float: left;
+    width: 700px;
+}
+
+#contenido { 
+    float: left; 
+    width: 550px; 
+} 
+
+#pie { 
+    clear: both; 
+}
+
+div#cabecera img {
+    margin-top: 5px;
+    height: 70px;
+    margin-left: 10px;
+}
+
+div#cabecera span {
+    font-size: 80px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+div#menu {
+    margin-top: 60px;
+}
+
+a {
+    margin: 10px;
+    border: 5px solid black;
+    text-decoration: none;
+    padding: 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: brown;
+    font-size: 27px;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-image: url(../IMÁGENES/fondo_suave.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+    background-color: rgba(255, 255, 255, 0.85);
+    background-blend-mode: lighten;
+    color: #222;
+}
+
+div#contenido {
+    margin-top: 60px;
+}
+
+div#contenido p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+div#contenido img {
+    margin: 0;
+    height: 180px;
+}
+
+div#pie p {
+    text-align: center;
+    font-weight: 500;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-image: url(../IMÁGENES/pie.avif);
+}
+
+div#pie span#tw {
+    color: rgb(23, 136, 217);
+}
+
+div#pie span#ig {
+    color: rgb(222, 36, 29);
+}

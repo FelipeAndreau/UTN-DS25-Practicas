@@ -1,0 +1,225 @@
+/* ========================= ESTILOS GENERALES ========================= */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-image: url(/src/assets/images/fondo_suave.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.85);
+  background-blend-mode: lighten;
+  color: #222;
+}
+
+a {
+  margin: 10px;
+  text-decoration: none;
+  padding: 5px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: brown;
+  font-size: 27px;
+}
+
+a.boton {
+  border: 5px solid black;
+}
+
+/* ========================= CONTENEDOR ========================= */
+#contenedor {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ========================= HEADER ========================= */
+#cabecera {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-image: url(/src/assets/images/R.jpg);
+  background-size: cover;
+  background-position: center;
+  color: rgb(251, 249, 249);
+  padding: 20px;
+}
+
+#cabecera img {
+  margin-top: 5px;
+  height: 70px;
+  margin-left: 10px;
+}
+
+#cabecera span {
+  font-size: 80px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+}
+
+/* ========================= LAYOUT PRINCIPAL ========================= */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* ========================= MENU ========================= */
+#menu {
+  flex: 1 1 300px;
+  max-width: 45%;
+  margin-top: 30px;
+}
+
+.menu-bloque {
+  margin-bottom: 30px;
+}
+
+#menu a {
+  display: inline-block;
+  margin: 10px;
+  border: 5px solid black;
+  text-decoration: none;
+  padding: 5px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: brown;
+  font-size: 27px;
+}
+
+/* ========================= CONTENIDO ========================= */
+
+#contenido {
+  flex: 1 1 300px;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  place-content: center;
+  margin: 0 auto;
+}
+
+#contenido p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#contenido img {
+  margin: 0;
+  height: 180px;
+}
+
+/* ========================= PIE DE PÁGINA ========================= */
+#pie {
+  text-align: center;
+  font-weight: 500;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-image: url(/src/assets/images/pie.avif);
+  background-size: cover;
+  padding: 10px;
+  margin-top: auto;
+}
+
+#pie span#tw {
+  color: rgb(23, 136, 217);
+}
+
+#pie span#ig {
+  color: rgb(222, 36, 29);
+}
+
+/* ========================= LIBRO DESTACADO ========================= */
+.libro-destacado {
+  margin-bottom: 40px;
+  padding: 10px;
+}
+
+.libro-titulo {
+  font-size: 24px;
+  font-weight: bold;
+  display: block;
+  margin: 0 auto 10px auto;
+  color: brown;
+  text-decoration: none;
+  text-align: center;
+  border: 5px solid black;
+  width: fit-content;
+  padding: 5px 10px;
+}
+
+.libro-descripcion {
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.libro-imagen {
+  height: 180px;
+  display: block;
+  margin-top: 5px;
+}
+
+/* ========================= REGISTRO Y CONTACTO ========================= */
+
+div.form {
+  font-size: 40px;
+}
+
+div.form div {
+  margin-top: 10px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+div label input, select {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 15px;
+  border: 2px solid black;
+  border-left: 7px solid grey;
+  border-radius: 5px;
+}
+
+div.enviar label input {
+  margin-top: 15px;
+  font-size: 35px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  border-radius: 5px;
+  border: 3px solid black;
+}
+
+span {
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+textarea {
+  height: 110px;
+  border-radius: 5px;
+  border: 2.4px solid black;
+}
+
+
+/* ========================= RESPONSIVE ========================= */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #menu, #contenido {
+    max-width: 100%;
+  }
+
+  #contenido {
+    grid-template-columns: 1fr;
+  }
+
+  #cabecera span {
+    font-size: 40px;
+  }
+
+  #cabecera img {
+    height: 50px;
+  }
+}

@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Portero Eléctrico</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    .visor { width: 50px; text-align: center; margin: 5px; }
+    .boton { width: 60px; height: 40px; margin: 5px; }
+    #panel { display: flex; flex-wrap: wrap; width: 200px; }
+  </style>
+</head>
+<body>
+
+  <h2>Portero Eléctrico</h2>
+  <div>
+    Piso: <input id="visorPiso" class="visor" readonly>
+    Dpto: <input id="visorDpto" class="visor" readonly>
+  </div>
+
+  <div id="panel">
+    <!-- Botones numéricos -->
+    <button class="boton">1</button>
+    <button class="boton">2</button>
+    <button class="boton">3</button>
+    <button class="boton">4</button>
+    <button class="boton">5</button>
+    <button class="boton">6</button>
+    <button class="boton">7</button>
+    <button class="boton">8</button>
+    <button class="boton">9</button>
+    <button class="boton">0</button>
+
+    <!-- Botones de acción -->
+    <button id="llamar" class="boton">Llamar</button>
+    <button id="borrar" class="boton">Borrar</button>
+  </div>
+
+  <div id="mensaje" style="margin-top:10px; font-weight: bold;"></div>
+
+  <script>
+    let piso = "";
+    let dpto = "";
+    let ingresandoPiso = true;
+
+    $(".boton").not("#llamar, #borrar").click(function() {
+      const valor = $(this).text();
+
+      if (ingresandoPiso) {
+        if (piso.length < 2) {
+          piso += valor;
+          $("#visorPiso").val(piso);
+        }
+        if (piso.length === 2) ingresandoPiso = false;
+      } else {
+        if (dpto.length < 1) {
+          dpto += valor;
+          $("#visorDpto").val(dpto);
+        }
+      }
+    });
+
+    $("#llamar").click(function() {
+      const pisoNum = parseInt(piso, 10);
+      const dptoNum = parseInt(dpto, 10);
+
+      if (isNaN(pisoNum) || pisoNum < 0 || pisoNum > 48 ||
+          isNaN(dptoNum) || dptoNum < 1 || dptoNum > 6) {
+        $("#mensaje").text("Error: Piso y/o Dpto inválido.");
+      } else {
+        $("#mensaje").text(`Llamando al piso ${piso.padStart(2, '0')}, dpto ${dpto}`);
+      }
+    });
+
+    $("#borrar").click(function() {
+      piso = "";
+      dpto = "";
+      ingresandoPiso = true;
+      $("#visorPiso, #visorDpto, #mensaje").val("").text("");
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 19px;
+}
+
+span {
+    color: rgb(29, 135, 135);
+    line-height: 1.5;
+}
+
+a {
+    border: 2.2px solid black;
+    text-decoration: none;
+    color: slategrey;
+    padding: 5px;
+    margin: 0;
+}
+
+body {
+    text-align: center;
+    background-color: bisque;
+}

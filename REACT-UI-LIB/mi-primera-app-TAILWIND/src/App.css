@@ -1,0 +1,18 @@
+/* App.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ========================= ESTILOS GENERALES ========================= */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-image: url(/src/assets/images/fondo_suave.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.85);
+  background-blend-mode: lighten;
+  color: #222;
+}

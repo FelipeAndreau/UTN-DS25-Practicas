@@ -1,0 +1,3 @@
+# 📚 PROYECTO: LIBRERÍA YENNY
+
+Este proyecto React implementa una librería digital, utilizando Tailwind CSS para estilos y los múltiples conceptos modernos que vimos en clase como Context, Custom Hooks, manejo de formularios, y conexión a una API externa. En esta primera versión, incluímos las primeras partes de la librería digital, pero estilando con CSS para comparar visualmente en lo que se transformaría luego con TAILWIND. Simplemente ese era su objetivo, por lo que no se le añadieron muchas cosas. Solo están implementadas todas las páginas (menos CATÁLOGO COMPLETO) y, como conceptos, la navegación con React Router con Link y los conceptos básicos de React (jsx, props, componentes, mapeado).
